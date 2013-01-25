@@ -2,7 +2,7 @@ Gemfile.lock
 .rake_tasks~
 vendor/*/build-*
 vendor/*/.build
-vendor/Pods/Pods.xcodeproj/project.pbxproj
+vendor/Pods
 pkg/*
 .repl_history
 build
