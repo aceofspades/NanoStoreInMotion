@@ -137,6 +137,16 @@ module NanoStore
       searchResult.last if searchResult
     end
 
+    # find models for supplied keys
+    #
+    # Return an Array of objects or empty Array (if not found)
+    #
+    # Examples:
+    # User.find_by_keys([my_key, my_key2])
+    def find_by_keys(keys)
+      self.store.objectsWithKeysInArray(keys) || []
+    end
+
     def bare_class_name
       self.to_s.split("::").last
     end
